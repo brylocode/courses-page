@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const handleCloseMenu = () => {
-        menuList.classList.remove('menu__list--active')
+        menuList.classList.remove('menu__list--active');
+        menuBtn.innerHTML = '<img src="assets/menu-btn.svg" alt="menu-icon" class="menu-icon">'
     }
 
     menuLinks.forEach(el => {

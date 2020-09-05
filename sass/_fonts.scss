@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/wjx1lpn.css");
+
+$font-family:muli,
+sans-serif;
+
+
+@mixin normal-font {
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin bold-font {
+    font-family: $font-family;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin italic-font {
+    font-family: $font-family;
+    font-weight: 400;
+    font-style: italic;
+}

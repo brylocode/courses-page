@@ -15,14 +15,44 @@ body {
   font-family: muli, sans-serif;
   font-weight: 400;
   font-style: normal;
+  min-height: 300vh;
+}
+
+button {
+  outline: transparent;
+}
+
+.btn {
+  padding: 2.5rem 4rem;
+  background: none;
+  border: 1px solid transparent;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-family: inherit;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: .2s background-color;
+  transition: .2s background-color;
+}
+
+.btn--primary {
+  background-color: #241381;
+}
+
+.btn--primary:hover {
+  background-color: #1e106b;
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 12px 10px #fff, 0 5px 12px 0 #fff;
+          box-shadow: 0 0 12px 10px #fff, 0 5px 12px 0 #fff;
+  z-index: 2;
 }
 
 .nav-container {
@@ -58,7 +88,7 @@ body {
 .menu__list {
   position: absolute;
   top: 60px;
-  right: 24px;
+  right: 27px;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -136,6 +166,78 @@ body {
   }
   .menu__link:active {
     color: #B6A9FE;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 3rem;
+  color: #0F0F2B;
+}
+
+.intro__title {
+  font-family: muli, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.6rem;
+  line-height: 111%;
+  margin-bottom: 2rem;
+}
+
+.intro__description {
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+.header-animation {
+  height: 400px;
+  background-color: rgba(0, 162, 255, 0.192);
+}
+
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .intro {
+    width: 50%;
+    max-width: 600px;
+    padding: 5rem;
+    margin-bottom: 0;
+  }
+  .intro__title {
+    font-size: 5.6rem;
+  }
+  .intro__description {
+    font-size: 1.8rem;
+  }
+  .header-animation {
+    width: 45%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,13 @@
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 12px 10px #fff,
+        0 5px 12px 0 #fff;
+    z-index: 2;
 }
 
 .nav-container {
@@ -33,7 +37,7 @@
 .menu__list {
     position: absolute;
     top: 60px;
-    right: 24px;
+    right: 27px;
     display: none;
     flex-direction: column;
     text-align: center;

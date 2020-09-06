@@ -1,0 +1,23 @@
+button {
+    outline: transparent;
+}
+
+.btn {
+    padding: 2.5rem 4rem;
+    background: none;
+    border: 1px solid transparent;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-family: inherit;
+    color: $light-font;
+    cursor: pointer;
+    transition: .2s background-color;
+}
+
+.btn--primary {
+    background-color: $primary-color;
+
+    &:hover {
+        background-color: darken($color: $primary-color, $amount: 5);
+    }
+}

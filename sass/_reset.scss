@@ -11,4 +11,5 @@ html {
 
 body {
     @include normal-font;
+    min-height: 300vh;
 }

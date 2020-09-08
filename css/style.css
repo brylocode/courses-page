@@ -18,6 +18,10 @@ body {
   min-height: 300vh;
 }
 
+input {
+  outline: transparent;
+}
+
 button {
   outline: transparent;
 }
@@ -41,6 +45,22 @@ button {
 
 .btn--primary:hover {
   background-color: #1e106b;
+}
+
+.btn--primary {
+  background-color: #241381;
+}
+
+.btn--primary:hover {
+  background-color: #1e106b;
+}
+
+.btn--success {
+  background-color: #442EBA;
+}
+
+.btn--success:hover {
+  background-color: #3d29a6;
 }
 
 .nav {
@@ -238,6 +258,176 @@ button {
   }
   .header-animation {
     width: 45%;
+  }
+}
+
+.footer {
+  background-color: #241381;
+}
+
+.newsletter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 5rem 3.5rem 6rem;
+  color: #FFFFFF;
+}
+
+.outro {
+  max-width: 30rem;
+  margin-bottom: 3rem;
+}
+
+.outro .circle {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 3rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.outro__title {
+  margin-bottom: 3rem;
+  font-size: 4.6rem;
+  line-height: 111%;
+  font-weight: bold;
+}
+
+.outro__description {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.newsletter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newsletter-box label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.newsletter__input {
+  padding: 2.5rem 3rem;
+  margin: 0 2rem 1rem;
+  font-size: 1.8rem;
+}
+
+.newsletter__input::-webkit-input-placeholder {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0F0F2B;
+  opacity: .7;
+}
+
+.newsletter__input:-ms-input-placeholder {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0F0F2B;
+  opacity: .7;
+}
+
+.newsletter__input::-ms-input-placeholder {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0F0F2B;
+  opacity: .7;
+}
+
+.newsletter__input::placeholder {
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0F0F2B;
+  opacity: .7;
+}
+
+.newsletter__info {
+  margin-top: 2rem;
+  font-family: muli, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #B6A9FE;
+  opacity: 0.7;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .newsletter {
+    padding: 10rem 7rem 12.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .outro {
+    margin-bottom: 0;
+    min-width: 44rem;
+  }
+  .outro__title {
+    font-size: 5.6rem;
+  }
+  .outro__description {
+    font-size: 1.8rem;
+  }
+  .newsletter-box label {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .newsletter__input {
+    margin-bottom: 0;
+  }
+  .newsletter__info {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

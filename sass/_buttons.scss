@@ -10,6 +10,8 @@ button {
     line-height: 2.3rem;
     font-family: inherit;
     color: $light-font;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
     transition: .2s background-color;
 }
@@ -36,4 +38,8 @@ button {
     &:hover {
         background-color: darken($color: $success-color, $amount: 5);
     }
+}
+
+.btn--s {
+    padding: 1.25rem 2rem;
 }

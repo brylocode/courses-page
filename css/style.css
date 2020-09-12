@@ -317,7 +317,7 @@ button {
 .card__head {
   position: relative;
   height: 20rem;
-  background-image: url(/assets/c-part1.jpg);
+  background-image: url("../assets/c-part1.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;

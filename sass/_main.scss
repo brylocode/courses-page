@@ -11,6 +11,8 @@
 
 .main-container {
     padding: 2rem;
+    max-width: 144rem;
+    margin: 0 auto;
 }
 
 .courses-container {
@@ -74,7 +76,7 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 26.5rem;
-        padding: 3rem 2.5rem 1rem;
+        padding: 3rem 2.5rem 2rem;
         background-color: $light-gray-color;
 
         .card__title {
@@ -95,6 +97,7 @@
             .card__description {
                 margin-bottom: 2rem;
                 font-size: 1.6rem;
+                line-height: 150%;
                 color: lighten($color: $dark-font, $amount: 10%);
             }
         }

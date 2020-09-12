@@ -229,8 +229,12 @@ button {
 }
 
 .header-animation {
-  height: 400px;
+  height: 500px;
   background-color: rgba(0, 162, 255, 0.192);
+  background-image: url("/assets/programming-head.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {

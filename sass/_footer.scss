@@ -25,6 +25,7 @@
         margin-bottom: 3rem;
         border-radius: 50%;
         background-color: $light-font;
+        animation: circle-pulse 2s infinite;
     }
 
     &__title {
@@ -106,5 +107,19 @@
 
     .newsletter__info {
         font-size: 1.6rem;
+    }
+}
+
+@keyframes circle-pulse {
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(.9);
     }
 }

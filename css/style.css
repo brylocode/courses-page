@@ -484,6 +484,8 @@ button {
   margin-bottom: 3rem;
   border-radius: 50%;
   background-color: #FFFFFF;
+  -webkit-animation: circle-pulse 2s infinite;
+          animation: circle-pulse 2s infinite;
 }
 
 .outro__title {
@@ -614,6 +616,36 @@ button {
   }
   .newsletter__info {
     font-size: 1.6rem;
+  }
+}
+
+@-webkit-keyframes circle-pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes circle-pulse {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 /*# sourceMappingURL=style.css.map */

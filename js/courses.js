@@ -9,7 +9,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/?couponCode=6CF428EE836BC00A1870',
-    img: '../assets/c-part1.jpg',
+    img: './assets/c-part1.jpg',
     tag: {
         show: true,
         type: 'hot-offer',
@@ -26,7 +26,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/?couponCode=594BE6C39C803E9FDD9E',
-    img: `../assets/c-part2.jpg`,
+    img: `./assets/c-part2.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -44,7 +44,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/?couponCode=594BE6C39C803E9FDD9E',
-    img: `../assets/c-part3.jpg`,
+    img: `./assets/c-part3.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -62,7 +62,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/javascript-jedyny-kurs-ktorego-potrzebujesz/?couponCode=EE8C595AABE66BE14CEC',
-    img: `../assets/c-js.jpg`,
+    img: `./assets/c-js.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -79,7 +79,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/javascript-jedyny-kurs-ktorego-potrzebujesz/?couponCode=EE8C595AABE66BE14CEC',
-    img: `../assets/c-jsp.jpg`,
+    img: `./assets/c-jsp.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -96,7 +96,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/10-projektow-w-czystym-javascript-cz-1/?couponCode=F0455B9B20140F07EC46',
-    img: `../assets/c-jsp2.jpg`,
+    img: `./assets/c-jsp2.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -113,7 +113,7 @@ let courses = [{
         free: false
     },
     link: 'https://www.udemy.com/course/bootstrap-flexbox-od-podstaw-projekty/?couponCode=1B32719C86326B4C9C8C',
-    img: `../assets/c-bootstrap.jpg`,
+    img: `./assets/c-bootstrap.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -130,7 +130,7 @@ let courses = [{
         free: true
     },
     link: 'https://www.youtube.com/watch?v=_JBGV8jVcbw&feature=youtu.be&ab_channel=MMCSchool',
-    img: `../assets/c-vsc.png`,
+    img: `./assets/c-vsc.png`,
     tag: {
         show: true,
         type: 'hot-offer',
@@ -147,7 +147,7 @@ let courses = [{
         free: true
     },
     link: 'https://www.youtube.com/playlist?list=PLxv_3XVN6Gc2Ki7m4H4vJAnDpnwysjD7C',
-    img: `../assets/c-grid.jpg`,
+    img: `./assets/c-grid.jpg`,
     tag: {
         show: true,
         type: 'hot-offer',

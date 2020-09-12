@@ -147,6 +147,22 @@ let courses = [{
         show: true,
         type: 'free',
     }
+}, {
+    id: 10,
+    title: 'Emmet',
+    tags: 'Emmet, Fast Coding',
+    description: "Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow. Write fast  codeee!",
+    prices: {
+        new: 0,
+        old: 0,
+        free: true
+    },
+    link: 'https://www.youtube.com/playlist?list=PLxv_3XVN6Gc2Ki7m4H4vJAnDpnwysjD7C',
+    img: `./assets/c-emmet.jpg`,
+    tag: {
+        show: true,
+        type: 'free',
+    }
 }
 ];
 
@@ -196,8 +212,11 @@ const createCourseCard = course => {
                                     <button class="btn btn--primary btn--s">Enroll now</button>
                                 </div>
                                 <div class="card__prices">
+                                    ${!course.prices.free ? `
                                     <p class="new-price">$${course.prices.new}</p>
-                                    <p class="old-price">$${course.prices.old}</p>
+                                    <p class="old-price">$${course.prices.old}</p>` :
+            `<p class="new-price">Free</p>
+                                        `}
                                 </div>
                             </div>
                         </div>

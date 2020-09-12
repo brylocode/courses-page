@@ -60,13 +60,27 @@
             padding: 1rem;
             box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
             font-size: 1.3rem;
-            color: $dark-font;
-            background-color: $danger-color;
-
+            color: $black-font;
+            background-color: transparent;
+            font-weight: bold;
 
             i {
                 margin-right: 1rem;
                 font-size: 2rem;
+            }
+
+
+            &--hot-offer {
+                background-color: $danger-color;
+            }
+
+            &--free {
+                background-color: $warning-color;
+            }
+
+            &--comming-soon {
+                background-color: $light-blue-color;
+
             }
         }
     }
@@ -128,14 +142,14 @@
     }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 46rem) {
     .course-item {
         width: 50%;
         padding: 3rem 2rem;
     }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 76.8rem) {
     .course-item {
         width: 33.333%;
     }

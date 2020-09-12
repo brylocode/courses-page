@@ -339,13 +339,26 @@ button {
   -webkit-box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.1);
   font-size: 1.3rem;
-  color: #0F0F2B;
-  background-color: #FF8364;
+  color: #000;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 .card__head .card__tag i {
   margin-right: 1rem;
   font-size: 2rem;
+}
+
+.card__head .card__tag--hot-offer {
+  background-color: #FF8364;
+}
+
+.card__head .card__tag--free {
+  background-color: #FFD054;
+}
+
+.card__head .card__tag--comming-soon {
+  background-color: #29b2f7;
 }
 
 .card__body {
@@ -421,14 +434,14 @@ button {
   text-decoration: line-through;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 46rem) {
   .course-item {
     width: 50%;
     padding: 3rem 2rem;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 76.8rem) {
   .course-item {
     width: 33.333%;
   }

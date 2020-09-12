@@ -11,9 +11,8 @@ let courses = [{
     link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/?couponCode=6CF428EE836BC00A1870',
     img: './assets/c-part1.jpg',
     tag: {
-        show: true,
+        show: false,
         type: 'hot-offer',
-        daysleft: 2
     }
 }, {
     id: 2,
@@ -28,9 +27,8 @@ let courses = [{
     link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/?couponCode=594BE6C39C803E9FDD9E',
     img: `./assets/c-part2.jpg`,
     tag: {
-        show: true,
+        show: false,
         type: 'hot-offer',
-        daysleft: 2
     }
 },
 {
@@ -43,7 +41,7 @@ let courses = [{
         old: 130,
         free: false
     },
-    link: 'https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/?couponCode=594BE6C39C803E9FDD9E',
+    link: 'https://mmcschool.teachable.com/p/kurs-tworzenia-stron-www-cz-3/?product_id=2387071&coupon_code=25PROMO3',
     img: `./assets/c-part3.jpg`,
     tag: {
         show: true,
@@ -66,7 +64,7 @@ let courses = [{
     tag: {
         show: true,
         type: 'hot-offer',
-        daysleft: 2
+        daysleft: 5
     }
 }, {
     id: 5,
@@ -81,9 +79,8 @@ let courses = [{
     link: 'https://www.udemy.com/course/javascript-jedyny-kurs-ktorego-potrzebujesz/?couponCode=EE8C595AABE66BE14CEC',
     img: `./assets/c-jsp.jpg`,
     tag: {
-        show: true,
+        show: false,
         type: 'hot-offer',
-        daysleft: 2
     }
 }, {
     id: 6,
@@ -99,7 +96,7 @@ let courses = [{
     img: `./assets/c-jsp2.jpg`,
     tag: {
         show: true,
-        type: 'hot-offer',
+        type: 'comming-soon',
         daysleft: 2
     }
 }, {
@@ -115,9 +112,8 @@ let courses = [{
     link: 'https://www.udemy.com/course/bootstrap-flexbox-od-podstaw-projekty/?couponCode=1B32719C86326B4C9C8C',
     img: `./assets/c-bootstrap.jpg`,
     tag: {
-        show: true,
+        show: false,
         type: 'hot-offer',
-        daysleft: 2
     }
 }, {
     id: 8,
@@ -133,8 +129,7 @@ let courses = [{
     img: `./assets/c-vsc.png`,
     tag: {
         show: true,
-        type: 'hot-offer',
-        daysleft: 2
+        type: 'free',
     }
 }, {
     id: 9,
@@ -150,8 +145,7 @@ let courses = [{
     img: `./assets/c-grid.jpg`,
     tag: {
         show: true,
-        type: 'hot-offer',
-        daysleft: 2
+        type: 'free',
     }
 }
 ];
@@ -187,10 +181,7 @@ const createCourseCard = course => {
     courseCard.innerHTML = `
                     <div class="card">
                         <div class="card__head" style=" background-image: url(${course.img});">
-                            <div class="card__tag">
-                                <i class="fas fa-fire"></i>
-                                <p>HOT OFFER, ${course.tag.daysleft} days left</p>
-                            </div>
+                           ${addTagToCard(course)}
                         </div>
                         <div class="card__body">
                             <div class="card__title">
@@ -212,13 +203,47 @@ const createCourseCard = course => {
                         </div>
                     </div>
     `
-    console.log(course.img);
     coursesContainer.appendChild(courseCard)
 }
 
+const addTagToCard = course => {
+
+    if (course.tag.show) {
+
+        switch (course.tag.type) {
+            case 'hot-offer':
+                const hotOfferTag = `
+                <div class="card__tag card__tag--hot-offer">
+                    <i class="fas fa-fire"></i>
+                    <p>HOT OFFER, ${course.tag.daysleft} days left</p>
+                </div>`
+                return hotOfferTag;
+                break;
+            case 'free':
+                const freeTag = `
+                 <div class="card__tag card__tag--free">
+                    <i class="fas fa-money-bill"></i>
+                    <p>For free</p>
+                </div>`
+                return freeTag;
+            case 'comming-soon':
+                const commingSoonTag = `
+                 <div class="card__tag card__tag--comming-soon">
+                    <i class="far fa-clock"></i>
+                    <p>Comming soon...</p>
+                </div>`
+                return commingSoonTag;
+
+            default:
+                break;
+        }
+    } else {
+        return '';
+    }
 
 
 
+}
 
 uploadData()
 
